@@ -115,7 +115,31 @@ pip install tensorflow opencv-python numpy scikit-learn matplotlib pillow
 *Note: `tkinter` is built-in with standard Python installations. If you are on Linux, you may need to install it manually via your package manager (e.g., `sudo apt-get install python3-tk`).*
 
 ### 3. Data Preparation
-Structure your dataset folder in the project directory as shown in the **Repository Structure** section. The code reads video clips with `.mp4`, `.avi`, `.mkv`, or `.mov` extensions.
+
+> [!NOTE]  
+> The datasets are **not** uploaded to this GitHub repository due to storage and size constraints. You must download them separately and place them in the project directory.
+
+The model is trained on a combination of the **RWF-2000** and **UCF-Crime** datasets:
+- **RWF-2000 Dataset:** Download from Kaggle [here](https://www.kaggle.com/datasets/acharjee/rwf2000-dataset).
+- **UCF-Crime Dataset:** Download from Kaggle [here](https://www.kaggle.com/datasets/odins0n/ucf-crime) (specifically the *Fighting* and *Assault* anomaly subsets).
+
+Once downloaded, extract and organize the files in your project root folder under a `data/` directory using the following structure:
+
+```text
+data/
+├── train/
+│   ├── fight/         # Violent/Fight clips from RWF-2000 & UCF-Crime (.mp4, .avi)
+│   └── nonfight/      # Non-violent/Normal clips from RWF-2000 (.mp4, .avi)
+├── val/
+│   ├── fight/         # Validation fight clips
+│   └── nonfight/      # Validation normal clips
+└── test/
+    ├── fight/         # Test fight clips (from RWF-2000 test split)
+    └── nonfight/      # Test normal clips (from RWF-2000 test split)
+```
+
+The data loading code reads video clips ending with `.mp4`, `.avi`, `.mkv`, or `.mov` extensions.
+
 
 ---
 
