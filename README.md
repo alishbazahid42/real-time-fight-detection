@@ -25,10 +25,11 @@ The evaluation results on the test split, showing high precision and recall for 
 
 | Metric | Non-Fight (Class 0) | Fight (Class 1) | Overall |
 | :--- | :---: | :---: | :---: |
-| **Precision** | *Reflected in report* | *Reflected in report* | - |
-| **Recall** | *Reflected in report* | *Reflected in report* | - |
-| **F1-Score** | *Reflected in report* | *Reflected in report* | - |
-| **Accuracy** | - | - | **~85%+** *(Typical)* |
+| **Precision** | **74.0%** | **74.0%** | - |
+| **Recall** | **75.0%** | **73.0%** | - |
+| **F1-Score** | **74.0%** | **74.0%** | - |
+| **Accuracy** | - | - | **74.0%** |
+
 
 #### Confusion Matrix
 ![Confusion Matrix](confusion_matrix.png)
