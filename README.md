@@ -120,8 +120,8 @@ pip install tensorflow opencv-python numpy scikit-learn matplotlib pillow
 > The datasets are **not** uploaded to this GitHub repository due to storage and size constraints. You must download them separately and place them in the project directory.
 
 The model is trained on a combination of the **RWF-2000** and **UCF-Crime** datasets:
-- **RWF-2000 Dataset:** Download from Kaggle [here](https://www.kaggle.com/datasets/acharjee/rwf2000-dataset).
-- **UCF-Crime Dataset:** Download from Kaggle [here](https://www.kaggle.com/datasets/odins0n/ucf-crime) (specifically the *Fighting* and *Assault* anomaly subsets).
+- **RWF-2000 Dataset:** Download from Kaggle [here](https://www.kaggle.com/datasets/vulamnguyen/rwf2000).
+- **UCF-Crime Dataset:** Download from Kaggle [here](https://www.kaggle.com/datasets/minmints/ufc-crime-full-dataset) (specifically the *Fighting* and *Assault* anomaly subsets).
 
 Once downloaded, extract and organize the files in your project root folder under a `data/` directory using the following structure:
 
